@@ -9,7 +9,7 @@ public class Conexion {
     //conexion local a la base de datos
     public static Connection conectar() {
         try {
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/registro", "root", "");
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/examen_visual", "root", "");
             return cn;
         } catch (SQLException e) {
             System.out.println("Error en la conexion local " + e);
